@@ -17,8 +17,5 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN rm -Rf /usr/share/doc && rm -Rf /usr/share/man
 RUN apt-get clean
 
-# Logging
-RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
-
 # Install Ansible inventory file
 RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
