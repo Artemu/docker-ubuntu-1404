@@ -5,7 +5,7 @@ LABEL maintainer="Kyle Lindeque"
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends software-properties-common
 
-# Update, add and update again for Ansible
+# Add and update again for Ansible
 RUN add-apt-repository -y ppa:ansible/ansible
 RUN apt-get update
 
