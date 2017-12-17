@@ -3,5 +3,5 @@ services: docker
 
 script:
   - docker build -t ansible-tstimg .
-  - docker run --name ansible-tstimg -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro ansible-tstimg /lib/systemd/systemd
-  - docker exec --tty ansible-tstimg env TERM=xterm ansible --version
+  - docker run --name ansible-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro ansible-tstimg /sbin/init
+  - docker exec --tty ansible-container env TERM=xterm ansible --version
