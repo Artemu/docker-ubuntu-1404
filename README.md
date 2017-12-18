@@ -16,4 +16,4 @@ When running the build environment, the images can be pulled directly from the D
 
 `docker pull artemu/ansible-ubuntu_1404`
 
-A blog post covering the full testing of an Ansible role has been written, please visit [my blog for more information](/etc/ansible/roles/role_under_test/tests/requirements.yml) detailing this process.
+A blog post covering the full testing of an Ansible role has been written, please visit [my blog for more information](https://artemu.me/blog/programming/2017/12/ansible-automated-pipelines-and-testing) detailing this process.
